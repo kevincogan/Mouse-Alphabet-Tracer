@@ -66,7 +66,9 @@ def score_function(event,x, y, score, previous):
     #print(score)
 #########################252252252252##########################################################
 cv2.namedWindow('Word Tracing Game')
-#cv2.setMouseCallback('Word Tracing Game',score_function)
+#Colour Detector
+cv2.setMouseCallback('Word Tracing Game',score_function)
+#Drawing On Image Function
 cv2.setMouseCallback('Word Tracing Game', draw_circle_with_drag)
 
 while True:
